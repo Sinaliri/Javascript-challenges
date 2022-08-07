@@ -1,14 +1,15 @@
 let n=window.prompt("Enter Number");
 let x=window.prompt("Enter Number");
 let y=window.prompt("Enter Number");
-
+let t=true
 const isDevidable= (n,x,y)=>{
     if(Number(n)% Number(x)==0 && Number(n)%Number(y)==0){
-        console.log("true") ;
+        // console.log("true")
+        return true
     }
     else{
 
-        console.log("false")
+        return false
     }
 }
-isDevidable(n,x,y);
+console.log(isDevidable(n,x,y))
